@@ -47,7 +47,7 @@ const mergeImages = (imagesData) => {
         console.log(err);
         return;
       }
-      const fileOut = join(process.cwd(), `/cat-card.jpg`);
+      const fileOut = join(process.cwd(), `/cat-card.jpeg`);
       writeFile(fileOut, data, "binary", (err) => {
         if (err) {
           console.log(err);
