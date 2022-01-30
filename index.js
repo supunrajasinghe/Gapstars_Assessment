@@ -68,6 +68,10 @@ const downloadMergeImage = () => {
     )
     .then((imagesData) => {
       mergeImages(imagesData);
+    })
+    .catch((err) => {
+      console.log(err);
+      return;
     });
 };
 
